@@ -1,0 +1,27 @@
+Sure, here is a simple example of a Flask web application:
+
+```python
+from flask import Flask
+
+# Create a Flask application instance
+app = Flask(__name__)
+
+# Define a route and its corresponding view function
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+# Run the Flask application
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+In this code:
+
+- We import the `Flask` class from the `flask` module.
+- We create an instance of the Flask class and assign it to the variable `app`.
+- We define a route using the `@app.route()` decorator. Here, the route `'/'` corresponds to the root URL of the application.
+- The `hello_world()` function is the view function for the `'/'` route. It returns the string `'Hello, World!'`.
+- Finally, we run the Flask application using the `run()` method. Setting `debug=True` enables debugging mode.
+
+When you run this code, Flask will start a web server on your local machine, and you can access the `'/'` route in your web browser to see the `'Hello, World!'` message.
